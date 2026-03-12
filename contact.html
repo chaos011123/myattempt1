@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BrandName</title>
+    <style>
+        /* Shared Styles from Join Page */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+        nav { background: #2c3e50; color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav a { color: #fff; text-decoration: none; font-weight: bold; }
+        
+        .page-title { background: #3498db; color: white; padding: 80px 5%; text-align: center; }
+        
+        /* Contact Page Specific Layout */
+        .contact-container { padding: 60px 5%; max-width: 700px; margin: 0 auto; }
+        
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        .form-group { margin-bottom: 20px; }
+        
+        .form-group label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: bold; 
+            color: #2c3e50; 
+        }
+        
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea { height: 150px; resize: vertical; }
+
+        /* Button Styling - Matched to Join Button */
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .btn-submit:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        footer { background: #2c3e50; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px; }
+        .return-link { display: block; text-align: center; margin-top: 30px; color: #3498db; font-weight: bold; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">BrandName</div>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-title">
+        <h1>Get In Touch</h1>
+        <p>Have questions? Bilal & Duncan are here to help.</p>
+    </header>
+
+    <main class="contact-container">
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+        
+        <a href="homepage.html" class="return-link">&larr; Return Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bilal&Duncan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
